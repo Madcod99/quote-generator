@@ -11,7 +11,7 @@ async function getQuotes() {
   showLoading();
   const proxyUrl = "https://cors-anywhere.herokuapp.com/";
   const apiUrl =
-    "https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en";
+    "https://api.forismatic.com/api/1.0/?method=getQuote&format=html&lang=en&callback=?";
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
