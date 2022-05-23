@@ -13,7 +13,7 @@ async function getQuotes() {
   const apiUrl =
     "https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en";
   try {
-    const response = await fetch(proxyUrl + apiUrl);
+    const response = await fetch(apiUrl);
     const data = await response.json();
     // manage unknown author
     if (data.quoteAuthor == "") {
