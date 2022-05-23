@@ -20,7 +20,7 @@ async function getQuotes() {
           Accept: 'application.json',
           'Content-Type': 'application/json',
            'Access-Control-Allow-Origin':'*'
-        }
+        }}
       );
     const data = await response.json();
     // manage unknown author
